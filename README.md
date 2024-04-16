@@ -9,7 +9,7 @@ Display additional information for certain columns.
 Installation
 Clone the repository to your local machine:
 bash
-git clone https://github.com/Siddharth/react-table.git
+git clone https://github.com/Siddhartcoding/react-table
 Navigate into the project directory:
 
 cd react-table-app
