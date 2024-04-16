@@ -1,0 +1,60 @@
+/* styles.css */
+
+.table-container {
+  height: 500px;
+  overflow: auto;
+  padding: 10px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+  padding: 8px;
+  font-size: 16px;
+  width: 80%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 14px;
+  border-bottom: 1px solid #c0c0c0;
+  background-color: #f2f2f2;
+  color: rgb(21, 118, 167);
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  border-left: 1px solid #c0c0c0;
+}
+
+/* .table tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.table td {
+  padding: 32px;
+  border-bottom: 1px solid #ddd;
+  color: rgb(75, 79, 82);
+  border-left: 1px solid #c0c0c0;
+}
+
+.buttons button {
+  margin-top: 20px;
+  text-align: left;
+  border: none;
+  font-size: smaller;
+  margin-left: 4px;
+  color: rgb(232, 77, 21);
+  cursor: pointer;
+}
+
+.featured {
+  font-size: small;
+  top: 0;
+  margin-top: -22px;
+  padding-bottom: 15px;
+  margin-left: -22px;
+  color: rgb(39, 220, 39);
+}

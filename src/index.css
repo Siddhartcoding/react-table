@@ -1,0 +1,55 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ddd; /* Add border to the table */
+}
+
+.table-header {
+  background-color: #4caf50; /* Change background color for header section */
+  color: white; /* Change text color for header section */
+  border-bottom: 2px solid #ddd; /* Add border to header section */
+}
+
+.table-header-cell,
+.table-cell {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Add border to table rows */
+  border-right: 1px solid #ddd; /* Add border to table columns */
+}
+
+.table-header-cell {
+  font-weight: bold;
+}
+
+.table-row:last-child .table-cell {
+  border-bottom: none; /* Remove bottom border for the last row */
+}
+
+.table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-row:hover {
+  background-color: #ddd;
+}
