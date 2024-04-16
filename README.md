@@ -8,16 +8,19 @@ Provide a global filter for searching by college name.
 Display additional information for certain columns.
 Installation
 Clone the repository to your local machine:
-bash
+
+
 git clone https://github.com/Siddhartcoding/react-table
+
 Navigate into the project directory:
-
 cd react-table-app
+
+
 Install dependencies:
-
 npm install
-Start the development server:
 
+
+Start the development server:
 npm start
 Open http://localhost:3000 to view it in the browser.
 
