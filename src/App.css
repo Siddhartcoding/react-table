@@ -11,8 +11,17 @@
   padding: 8px;
   font-size: 16px;
   width: 80%;
+  border: none;
+  border-bottom: 1px solid rgb(115, 131, 147);
 }
-
+.input-field::placeholder {
+  color: lightgray;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.input-field:focus {
+  outline: none;
+  border-bottom: 1.8px solid lightslategray;
+}
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -41,11 +50,11 @@
 }
 
 .buttons button {
-  margin-top: 20px;
+  padding-top: 4rem;
   text-align: left;
   border: none;
   font-size: smaller;
-  margin-left: 4px;
+  margin-left: 1rem;
   color: rgb(232, 77, 21);
   cursor: pointer;
 }

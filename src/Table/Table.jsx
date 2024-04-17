@@ -72,7 +72,12 @@ function Table({ columns, data }) {
                             <button style={{ background: "white" }}>
                               <BsFillPlayFill /> Apply Now
                             </button>
-                            <button style={{ background: "white" }}>
+                            <button
+                              style={{
+                                background: "white",
+                                paddingLeft: "2rem",
+                              }}
+                            >
                               <BsDownload /> Download Brochure
                             </button>
                           </div>
@@ -105,6 +110,12 @@ function Table({ columns, data }) {
                       ) : index === 6 ? (
                         // <div>Ranking: {cell.value} in India</div>
                         ""
+                      ) : index === 2 ? (
+                        // Handle index 2 separately
+                        <div className="course-fees">{cell.render("Cell")}</div>
+                      ) : index === 4 || index === 5 ? (
+                        // Handle index 4 and 5 separately
+                        <div className="user-review">{cell.render("Cell")}</div>
                       ) : (
                         <div className="cell">{cell.render("Cell")}</div>
                       )}
