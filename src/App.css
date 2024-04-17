@@ -74,4 +74,13 @@
 }
 .cell {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: -4.6rem;
+  margin-left: -1rem;
+  font-weight: 600;
+  color: rgb(135, 136, 137);
+}
+.course-fees {
+  color: rgb(52, 236, 162);
+  font-weight: 700;
+  font-size: medium;
 }

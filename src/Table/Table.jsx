@@ -117,7 +117,7 @@ function Table({ columns, data }) {
                         // Handle index 4 and 5 separately
                         <div className="user-review">{cell.render("Cell")}</div>
                       ) : (
-                        <div className="cell">{cell.render("Cell")}</div>
+                        <div className="cell">#{cell.render("Cell")}</div>
                       )}
                     </td>
                   );
