@@ -2,7 +2,7 @@ export const colleges = [
   {
     "CD Rank": 1,
     colleges: "Indian Institute of Technology Bombay (IIT Bombay)",
-    courseFees: 200000,
+    courseFees: "₹200000",
     placementAveragePackages: 1200000,
     highestPackage: 3000000,
     userReviews: 9.5,
@@ -12,7 +12,7 @@ export const colleges = [
   {
     "CD Rank": 2,
     colleges: "Indian Institute of Technology Delhi (IIT Delhi)",
-    courseFees: 210000,
+    courseFees: "₹210000",
     placementAveragePackages: 1100000,
     highestPackage: 2800000,
     userReviews: 9.4,
@@ -22,7 +22,7 @@ export const colleges = [
   {
     "CD Rank": 3,
     colleges: "Indian Institute of Technology Madras (IIT Madras)",
-    courseFees: 220000,
+    courseFees: "₹220000",
     placementAveragePackages: 1150000,
     highestPackage: 2900000,
     userReviews: 9.3,
@@ -32,7 +32,7 @@ export const colleges = [
   {
     "CD Rank": 4,
     colleges: "Indian Institute of Technology Kanpur (IIT Kanpur)",
-    courseFees: 190000,
+    courseFees: "₹190000",
     placementAveragePackages: 1250000,
     highestPackage: 3100000,
     userReviews: 9.6,
@@ -42,7 +42,7 @@ export const colleges = [
   {
     "CD Rank": 5,
     colleges: "Indian Institute of Technology Kharagpur (IIT Kharagpur)",
-    courseFees: 180000,
+    courseFees: "₹180000",
     placementAveragePackages: 1300000,
     highestPackage: 3200000,
     userReviews: 9.7,
@@ -52,7 +52,7 @@ export const colleges = [
   {
     "CD Rank": 6,
     colleges: "Indian Institute of Technology Roorkee (IIT Roorkee)",
-    courseFees: 200000,
+    courseFees: "₹200000",
     placementAveragePackages: 1200000,
     highestPackage: 3100000,
     userReviews: 9.5,
@@ -62,7 +62,7 @@ export const colleges = [
   {
     "CD Rank": 7,
     colleges: "Indian Institute of Technology Guwahati (IIT Guwahati)",
-    courseFees: 210000,
+    courseFees: "₹210000",
     placementAveragePackages: 1100000,
     highestPackage: 2900000,
     userReviews: 9.4,
@@ -72,7 +72,7 @@ export const colleges = [
   {
     "CD Rank": 8,
     colleges: "Indian Institute of Technology Hyderabad (IIT Hyderabad)",
-    courseFees: 220000,
+    courseFees: "  ₹220000",
     placementAveragePackages: 1150000,
     highestPackage: 2800000,
     userReviews: 9.3,
@@ -82,7 +82,7 @@ export const colleges = [
   {
     "CD Rank": 9,
     colleges: "Indian Institute of Technology Gandhinagar (IIT Gandhinagar)",
-    courseFees: 190000,
+    courseFees: "₹190000",
     placementAveragePackages: 1250000,
     highestPackage: 3000000,
     userReviews: 9.6,
@@ -91,7 +91,7 @@ export const colleges = [
   {
     "CD Rank": 10,
     colleges: "Indian Institute of Technology Indore (IIT Indore)",
-    courseFees: 180000,
+    courseFees: "₹180000",
     placementAveragePackages: 1300000,
     highestPackage: 3100000,
     userReviews: 9.7,

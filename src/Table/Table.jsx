@@ -79,18 +79,34 @@ function Table({ columns, data }) {
                         </div>
                       ) : index === 3 ? (
                         <div>
-                          <div>
-                            Placement Average Packages:{" "}
-                            {row.original.placementAveragePackages}
+                          <div className="package">
+                            <p
+                              style={{
+                                color: " rgb(52, 236, 162)",
+                                marginBottom: "4px",
+                              }}
+                            >
+                              ₹{row.original.placementAveragePackages}
+                            </p>
+                            Average Packages
                           </div>
-                          <div>
-                            Highest Package: {row.original.highestPackage}
+                          <div className="package">
+                            <p
+                              style={{
+                                color: " rgb(52, 236, 162)",
+                                marginBottom: "4px",
+                              }}
+                            >
+                              ₹{row.original.highestPackage}
+                            </p>
+                            Highest Packages
                           </div>
                         </div>
                       ) : index === 6 ? (
-                        <div>Ranking: {cell.value} in India</div>
+                        // <div>Ranking: {cell.value} in India</div>
+                        ""
                       ) : (
-                        cell.render("Cell")
+                        <div className="cell">{cell.render("Cell")}</div>
                       )}
                     </td>
                   );

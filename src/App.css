@@ -58,3 +58,11 @@
   margin-left: -22px;
   color: rgb(39, 220, 39);
 }
+.package {
+  font-size: smaller;
+  color: rgb(110, 111, 112);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.cell {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
