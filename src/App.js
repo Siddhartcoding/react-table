@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from "react";
-
 import "./App.css";
 import { colleges } from "./data/data";
 import Table from "./Table/Table";
@@ -41,7 +40,7 @@ function App() {
 
   return (
     <div className="table-container">
-      <Table columns={columns} data={data} />
+      <Table columns={columns} data={data} setData={setData} />
     </div>
   );
 }

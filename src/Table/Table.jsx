@@ -1,8 +1,9 @@
-import { useTable, useSortBy, useGlobalFilter } from "react-table";
+import { useState } from "react";
+import { useTable, useGlobalFilter } from "react-table";
 import { BsDownload, BsFillPlayFill } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
 
-function Table({ columns, data }) {
+function Table({ columns, data, setData }) {
   const {
     getTableProps,
     getTableBodyProps,
@@ -16,11 +17,28 @@ function Table({ columns, data }) {
       columns,
       data,
     },
-    useGlobalFilter,
-    useSortBy
+    useGlobalFilter
   );
 
   const { globalFilter } = state;
+  const [activeButton, setActiveButton] = useState(null);
+
+  const sortData = (field) => {
+    const newData = [...data];
+    newData.sort((a, b) => {
+      if (
+        field === "ranking" ||
+        field === "courseFees" ||
+        field === "userReviews"
+      ) {
+        return a[field] > b[field] ? 1 : -1;
+      } else {
+        return 0;
+      }
+    });
+    setData(newData);
+    setActiveButton(field);
+  };
 
   // Render the table UI
   return (
@@ -32,6 +50,27 @@ function Table({ columns, data }) {
         onChange={(e) => setGlobalFilter(e.target.value)}
         className="input-field" // Added class for input field
       />
+      <div className="sort-buttons">
+        <span>Sort by:</span>
+        <button
+          className={activeButton === "ranking" ? "active" : ""}
+          onClick={() => sortData("ranking")}
+        >
+          Ranking
+        </button>
+        <button
+          className={activeButton === "courseFees" ? "active" : ""}
+          onClick={() => sortData("courseFees")}
+        >
+          Fees
+        </button>
+        <button
+          className={activeButton === "userReviews" ? "active" : ""}
+          onClick={() => sortData("userReviews")}
+        >
+          Reviews
+        </button>
+      </div>
       <table {...getTableProps()} className="table">
         {" "}
         {/* Added class for table */}
@@ -39,16 +78,7 @@ function Table({ columns, data }) {
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                  {column.render("Header")}
-                  <span>
-                    {column.isSorted
-                      ? column.isSortedDesc
-                        ? " 🔽"
-                        : " 🔼"
-                      : ""}
-                  </span>
-                </th>
+                <th {...column.getHeaderProps()}>{column.render("Header")}</th>
               ))}
             </tr>
           ))}
